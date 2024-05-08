@@ -1,0 +1,26 @@
+# account holder
+type AccountHolder {
+  id: ID
+  name: String
+  phoneNumber: String
+  email: String
+  password: String
+}
+# Task
+type Task {
+  id: ID
+  title: String
+  startDate: String
+  endDate: String
+  assignees: String
+  project: Project
+  description: String
+  taskPriority: TaskPriority
+  attachment: String
+}
+# project
+type Project {
+  id: ID
+  name: String
+  taskList: [Task]
+}

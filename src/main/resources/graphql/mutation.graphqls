@@ -1,0 +1,13 @@
+type Mutation {
+  # account holder
+  createAccount(accountHolderInput:AccountHolderInput): String
+  deleteAccount(id: ID): String
+  findByEmail(email: String): AccountHolder
+  login(email:String,password:String):AccountHolder
+  # task
+  createTask(taskInput: TaskInput): String
+  deleteTask(id: ID): String
+  # project
+  createProject(projectInput: ProjectInput): String
+  deleteProject(id: ID): String
+}

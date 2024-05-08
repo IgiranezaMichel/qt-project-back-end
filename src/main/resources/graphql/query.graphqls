@@ -1,0 +1,6 @@
+type Query{
+    # task
+    getAllTask:[Task]
+    # project
+    getAllProject:[Project]
+}
